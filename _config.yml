@@ -4,10 +4,10 @@
 baseurl: 
 url: 
 date_format: "ordinal"
-title: 码志
-subtitle: "打码改变人生"
-description: "马壮的个人博客"
-keywords: 码志, Zhuang Ma, mzlogin, mazhuang
+title: 博客
+subtitle: "一码一世界!"
+description: "个人博客"
+keywords: 博客, eiengwch 
 timezone: Asia/Shanghai
 encoding: "utf-8"
 side_bar_repo_limit: 5
@@ -18,12 +18,12 @@ side_bar_repo_limit: 5
 # ---------------- #
 #      Author      #
 # ---------------- #
-author: Zhuang Ma
+author: Cheng Wei
 organization: 
 organization_url: 
-github_username: mzlogin
+github_username: eiengwch
 location: Wuhan, China
-email: chumpma@gmail.com
+email: eiengwch@gmail.com
 
 # ---------------- #
 #    Navigation    #
