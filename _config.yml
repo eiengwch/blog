@@ -1,6 +1,6 @@
-# ---------------- #
-#   Main Configs   #
-# ---------------- #
+# -----------------------------------------------------
+#   Main Configs   
+# -----------------------------------------------------
 baseurl: 
 url: 
 date_format: "ordinal"
@@ -12,12 +12,9 @@ timezone: Asia/Shanghai
 encoding: "utf-8"
 side_bar_repo_limit: 5
 
-
-
-
-# ---------------- #
-#      Author      #
-# ---------------- #
+# ----------------------------------------------------- 
+#      Author   
+# -----------------------------------------------------
 author: Cheng Wei
 organization: 
 organization_url: 
@@ -25,42 +22,37 @@ github_username: eiengwch
 location: Shanghai, China
 email: eiengwch@gmail.com
 
-# ---------------- #
-#    Navigation    #
-# ---------------- #
+# ----------------------------------------------------- 
+#    Navigation    
+# ----------------------------------------------------- 
 navs:
   -
     href: /
     label: 首页
-
   -
     href: /categories/
     label: 分类
-
-#   -
-#     href: /archives/
-#     label: 归档
-
+  -
+    href: /archives/
+    label: 归档
   -
     href: /wiki/
     label: 维基
-
   -
     href: /links/
     label: 链接
-
   -
     href: /about/
     label: 关于
 
-# ---------------- #
-#       RSS        #
-# ---------------- #
+# ----------------------------------------------------- 
+#       RSS        
+# ----------------------------------------------------- 
 subscribe_rss: /feed.xml
 
-# ---------------- #
-#      Jekyll      #
-# ---------------- #
+# ----------------------------------------------------- 
+#      Jekyll      
+# ----------------------------------------------------- 
 markdown: kramdown
 kramdown:
     input: GFM
@@ -69,7 +61,7 @@ paginate: 10
 lsi: false
 quiet: false
 excerpt_separator: "\n\n"
-permalink: none
+permalink:  /:title/
 plugins:
     - jekyll-github-metadata
     - rouge
@@ -82,14 +74,12 @@ plugins:
 collections:
     wiki:
         output: true
-        permalink: none
-
+        permalink: /wiki/:path/
 repository: eiengwch/eiengwch.github.io
 
-
-# ---------------- #
-#      Comments    #
-# ---------------- #
+# ----------------------------------------------------- 
+#      Comments    
+# ----------------------------------------------------- 
 # support provider: disqus, gitment, gitalk
 comments_provider: gitalk
 # !!!重要!!! 请修改下面这些信息为你自己申请的
@@ -113,17 +103,17 @@ gitalk:
 # 在使用其它评论组件时可点击显示 Disqus
 lazy_load_disqus : false
 
-# ---------------- #
-#      Search      #
-# ---------------- #
+# ----------------------------------------------------- 
+#      Search      
+# ----------------------------------------------------- 
 simple_jekyll_search:
     # 是否支持全文搜索
     fulltext: false
     # 最多显示多少条搜索结果
     limit: 10
 
-# ---------------- #
-#    Analytics     #
-# ---------------- #
+# ----------------------------------------------------- 
+#    Analytics     
+# ----------------------------------------------------- 
 google:
     analytics_id: UA-80669434-1
