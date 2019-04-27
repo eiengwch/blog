@@ -11,7 +11,7 @@ keywords: Mysql
 
 ### 示例-统计条数
 
-```mysql
+```sql
 SELECT
 COUNT(*) as count_id
 FROM
@@ -22,7 +22,7 @@ AND family_id = 11
 
 ### 示例-去除重复统计
 
-```mysql
+```sql
 SELECT
 COUNT(DISTINCT uid) as count_id
 FROM
@@ -32,7 +32,7 @@ WHERE dtime = '2016-12-5'
 
 ### 示例-分组统计
 
-```mysql
+```sql
 SELECT
 dtime,COUNT(DISTINCT uid) as count
 FROM
@@ -46,7 +46,7 @@ ORDER BY dtime ASC
 
 ### 示例-表达式计算统计
 
-```mysql
+```sql
 SELECT
 SUM(income_glamour) as sum_inc,
 COUNT(IF(is_valid=1,true,null)) as is_1,
@@ -60,7 +60,7 @@ ORDER BY dtime ASC
 
 ### 示例-分组计算统计
 
-```mysql
+```sql
 SELECT
 dtime,SUM(income_glamour) as sum_inc,
 COUNT(IF(is_valid=1,true,null)) as is_1,
@@ -74,7 +74,7 @@ ORDER BY dtime ASC
 ```
 ### 示例-计算一个字段之和
 
-```mysql
+```sql
 SELECT
 SUM(fee) as sum_fee
 FROM
@@ -85,7 +85,7 @@ ORDER BY fee DESC
 ```
 ### 示例-计算多个字段数据之和
 
-```mysql
+```sql
 SELECT
 SUM(fee) as sum_fee, SUM(multiple) as multiple_sum
 FROM
@@ -98,7 +98,7 @@ ORDER BY fee DESC
 
 ### 示例-对计算出来的结果添加当天的时间
 
-```mysql
+```sql
 SELECT
 SUM(fee) as sum_fee, SUM(multiple) as multiple_sum, NOW() as the_day
 FROM
@@ -110,7 +110,7 @@ ORDER BY fee DESC
 
 ### 示例-关联分组 关联表 统计查询
 
-```mysql
+```sql
 SELECT
  `name`,goods_id,SUM(fee) as sum_fee
 FROM
@@ -125,7 +125,7 @@ ORDER BY sum_fee DESC
 
 ### 示例-表达式计算求和
 
-```mysql
+```sql
 SELECT
 dtime,SUM(income_glamour) as income_sum,
             SUM(income_glamour/100) as money,

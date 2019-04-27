@@ -11,7 +11,7 @@ keywords: Mysql
 
 ### 示例-关系单表子查询
 
-```mysql
+```sql
 SELECT id,uid,family_id,base_pay,cash_base,is_valid
 FROM stat_live_family_member_daily WHERE uid in (
 	SELECT uid FROM stat_live_family_member_daily WHERE dtime >= '2016-11-01'GROUP BY uid HAVING SUM(is_valid) >= 13)
@@ -22,7 +22,7 @@ ORDER BY uid
 
 ### 示例-关系多表子查询
 
-```mysql
+```sql
 SELECT * FROM
     (SELECT * FROM `cj_glamour_record` WHERE `uid` = 14368320 AND `type` = 100  UNION
             (SELECT * FROM `cj_glamour_record_like` WHERE `uid` = 14368320 AND `type` = 100)
@@ -35,7 +35,7 @@ LIMIT 0,50
 
 ### 示例-三张表连接查询
 
-```mysql
+```sql
 SELECT g.`name`, o.goods_id, SUM(fee) FROM
 cj_order as o
 	LEFT JOIN chujiandw.cj_goods as g  on o.goods_id = g.id
@@ -47,7 +47,7 @@ GROUP BY o.goods_id
 
 ### 示例-多张表连接查询
 
-```mysql
+```sql
 SELECT
     sum(diamond) AS sum_diamond
 FROM
@@ -61,7 +61,7 @@ AND t.type = 0
 
 ### 示例-去重复 子查询 时间戳转换日期查询
 
-```mysql
+```sql
 SELECT
 id,uid,family_id,FROM_UNIXTIME(create_time, '%Y-%m-%d'),attrs,delete_time
 from 
@@ -76,7 +76,7 @@ ORDER BY create_time desc
 
 ### 示例-子查询 当前时间戳转换
 
-```mysql
+```sql
 SELECT count(id) as sum_id
 from  cj_live_family_users WHERE
 family_id in (SELECT id from cj_live_family WHERE  delete_time=0)
@@ -90,7 +90,7 @@ and cancel_time >0
 
 ### 示例-日期转换时间戳查询
 
-```mysql
+```sql
 SELECT `oid`,sum(glamour_take) AS `glamour_take` FROM `cj_live_gift_record`
 WHERE `oid` IN (14841990)
 AND `create_time` >= UNIX_TIMESTAMP('2016-11-11')
@@ -99,7 +99,7 @@ AND create_time <= UNIX_TIMESTAMP('2016-11-11 23:59:59')
 
 ### 示例-对多个字段，每个字段加和统计
 
-```mysql
+```sql
 SELECT
     `family_id`,
     `elder_cash_rate`,
@@ -123,7 +123,7 @@ ORDER BY
 
 ### 示例-根据一个字段分组统计另一个字段数据相加
 
-```mysql
+```sql
 SELECT uid,COUNT(id) as cnt FROM stat_live_family_member_daily
 WHERE is_valid = 1
 GROUP BY uid
@@ -133,7 +133,7 @@ ORDER BY cnt DESC
 
 ### 示例-查询重复数据
 
-```mysql
+```sql
  select * from cj_live_family_users where uid in (
  	select uid from cj_live_family_users group by uid having count(0) > 1
  	)
@@ -141,7 +141,7 @@ ORDER BY cnt DESC
 
 ### 示例-别名连接查询
 
-```mysql
+```sql
 SELECT
     a.uid,b.update_time,a.nickname,a.birthday,a.album,a.type
 FROM
