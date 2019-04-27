@@ -591,7 +591,7 @@ https://github.com
 
 仍然以 TAPD 为例：
 
-![数学公式]({site.url}/images/posts/markdown/tapd-markdown-math.png)
+![数学公式]({{site.url}}/images/posts/markdown/tapd-markdown-math.png)
 
 应该是利用 JavaScript 支持了 LaTeX 公式语法。
 
