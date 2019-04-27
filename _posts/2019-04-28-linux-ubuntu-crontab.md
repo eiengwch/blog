@@ -3,7 +3,7 @@ layout: post
 title: Linux Ubuntu安装Crontab工具
 categories: Linux
 description: linux 环境下安装crontab工具
-keywords: Mysql
+keywords: linux crontab
 ---
 
 
