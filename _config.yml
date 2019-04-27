@@ -2,7 +2,7 @@
 #   Main Configs   
 # -----------------------------------------------------
 baseurl: 
-url: 
+url: https://eiengwch.com
 date_format: "ordinal"
 title: 博客
 subtitle: "一码一世界!"
