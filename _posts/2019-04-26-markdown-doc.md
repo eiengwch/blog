@@ -591,46 +591,10 @@ https://github.com
 
 仍然以 TAPD 为例：
 
-![数学公式](https://raw.githubusercontent.com/eiengwch/markdown-intro/master/assets/tapd-markdown-math.png)
+![数学公式]({site.url}/images/posts/markdown/tapd-markdown-math.png)
 
 应该是利用 JavaScript 支持了 LaTeX 公式语法。
 
-### 用 Markdown 做 PPT
 
-有专门的工具 [Marp](https://github.com/yhatt/marp)，另外使用 VSCode + 插件 Markdown Preview Enhanced 也可以实现。
-
-### 用 Markdown 写微信公众号
-
-可以将公众号素材用 Markdown 编辑好后，贴到在线排版工具以后，复制到公众号编辑器里即可。有多种页面主题和代码主题可选择。
-
-我维护的工具地址：<https://md.mazhuang.org>
-
-![微信公众号](https://raw.githubusercontent.com/eiengwch/markdown-intro/master/assets/wechat-markdown.png)
-
-### 更多
-
-想象力丰富的工程师们还扩展了很多基于 Markdown 的玩法，包括但不限于：
-
-* 自动生成 / 更新 Table of Contents
-* 流程图 / 时序图
-* 制作幻灯片
-* 集成 PlantUML / GraphViz 的能力
-* 导出 HTML / PDF / 电子书
-* ...
-
-以上功能基本都可以用 VSCode + 插件 Markdown Preview Enhanced 实现。
-
-另外可以参考我以前的一篇博客 [关于 Markdown 的一些奇技淫巧](https://mazhuang.org/2017/09/01/markdown-odd-skills/)。
-
-## 参考
-
-* [Markdown: Syntax - DARING FIREBALL](https://daringfireball.net/projects/markdown/syntax)
-* [Markdown - 维基百科](https://zh.wikipedia.org/wiki/Markdown)
-* [GitHub Flavored Markdown Spec](https://github.github.com/gfm/)
-* [关于 Markdown 的一些奇技淫巧](https://mazhuang.org/2017/09/01/markdown-odd-skills/)
-
+完
 ---
-
-欢迎关注我的微信公众号，接收 markdown-intro 最新动态。
-
-<div align="center"><img width="192px" height="192px" src="https://mazhuang.org/assets/images/qrcode.jpg"/></div>
