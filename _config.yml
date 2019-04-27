@@ -90,16 +90,16 @@ disqus:
 # https://imsun.net/posts/gitment-introduction/
 gitment:
     owner: eiengwch
-    repo: eiengwch-blog-comments
+    repo:  blog-comments
     oauth:
-        client_id: 99fe0ab1b79494db1e7c
-        client_secret: 75a3c44b49bc4168017ecf163fee2dd62d1ba8ac
+        client_id: 83c5a764c4105c36c54f
+        client_secret: ec02cdbc5fb66b0492e313290039a6538319832f
 # https://github.com/gitalk/gitalk#install
 gitalk:
     owner: eiengwch
-    repo: eiengwch-blog-comments
-    clientID: 99fe0ab1b79494db1e7c
-    clientSecret: 75a3c44b49bc4168017ecf163fee2dd62d1ba8ac
+    repo:  blog-comments
+    clientID: 83c5a764c4105c36c54f
+    clientSecret: ec02cdbc5fb66b0492e313290039a6538319832f
 # 在使用其它评论组件时可点击显示 Disqus
 lazy_load_disqus : false
 
