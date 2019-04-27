@@ -499,11 +499,11 @@ Markdown 标记语言的目的不是替代 HTML，也不是发明一种更便捷
 
 如果是在 GitHub / GitLab 的 Issue 里，会附赠任务完成比例提示效果：
 
-![task list 1](https://raw.githubusercontent.com/eiengwch/markdown-intro/master/assets/task-list-1.png)
+![task list 1]({{site.url}}/images/posts/markdown/task-list-1.png)
 
 还可以直接在网页上拖动调整顺序，勾选和取消勾选。
 
-![task list 2](https://raw.githubusercontent.com/eiengwch/markdown-intro/master/assets/task-list-2.png)
+![task list 2]({{site.url}}/images/posts/markdown/task-list-2.png)
 
 ### 删除线
 
@@ -583,9 +583,9 @@ https://github.com
 
 以我们使用的项目管理工具 TAPD 的在线编辑器为例：
 
-![流程图](https://raw.githubusercontent.com/eiengwch/markdown-intro/master/assets/tapd-markdown-flowchart.png)
+![流程图]({{site.url}}/images/posts/markdown/tapd-markdown-flowchart.png)
 
-![时序图](https://raw.githubusercontent.com/eiengwch/markdown-intro/master/assets/tapd-markdown-seq.png)
+![时序图]({{site.url}}/images/posts/markdown/tapd-markdown-seq.png)
 
 ### 插入数学公式
 
